@@ -1,5 +1,5 @@
-# iDEA
-Integrative Differential expression and gene set Enrichment Analysis for single cell RNAseq studies 
+# SPRINT
+Spatial Pattern Recognition IN Transcriptomics 
 
 Installation
 ------------
@@ -8,13 +8,13 @@ Installation
 install.packages('devtools')
 
 # install the iDEA package
-devtools::install_github('xzhoulab/iDEA')
+devtools::install_github('xzhoulab/SPRINT')
 
 # load package
-library(iDEA)
+library(SPRINT)
 ```
 
-How to cite `iDEA`
+How to cite `SPRINT`
 -------------------
-Shiquan Sun, Ying Ma, Mengjie Chen and Xiang Zhou. *Integrative differential expression and gene set enrichment analysis for single cell RNAseq studies*, BioRxiv, 2019. 
+Shiquan Sun, Jiaqiang Zhu, Mengjie Chen and Xiang Zhou. **, BioRxiv, 2019. 
 

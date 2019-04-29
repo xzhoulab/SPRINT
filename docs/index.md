@@ -6,8 +6,8 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
-author: "Shiquan Sun, Ying Ma and Xiang Zhou"
-date: '2019-02-08'
+author: "Shiquan Sun, Jiaqiang Zhu and Xiang Zhou"
+date: '2019-04-28'
 output:
 pdf_document: default
 html_document: default
@@ -29,8 +29,7 @@ variant: markdown_github
 
 ### 1. Load summary statistics and annotations
 
-### 2. Create an `iDEA` object
+### 2. Create an `SPRINT` object
 
 ### 3. Fit the model
 
-### 3. Correct p-values

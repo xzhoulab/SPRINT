@@ -29,7 +29,13 @@ R CMD INSTALL SPRINT_1.0.0.tar.gz
      
     ## rawcount matrix of genes by cells/spots
     rawcount[1:5,1:5]
-    
+```
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+```R
     ## extract the coordinates from the rawdata
     info <- cbind.data.frame(x=as.numeric(sapply(strsplit(colnames(rawcount),split="x"),"[",1)),
                             y=as.numeric(sapply(strsplit(colnames(rawcount),split="x"),"[",2)),

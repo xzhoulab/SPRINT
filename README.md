@@ -50,6 +50,9 @@ R CMD INSTALL SPRINT_1.0.0.tar.gz
 
     ## Calculating pval
     sprint <- sprint.test(sprint, check_positive = T, verbose=F)
+    
+    ## Check pvals 
+    head(sprint@res_mtest)
 ```
 
 

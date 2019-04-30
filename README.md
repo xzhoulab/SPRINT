@@ -45,7 +45,9 @@ R CMD INSTALL SPRINT_1.0.0.tar.gz
     rownames(info) <- colnames(rawcount)
 
     ## filter genes and cells/spots and create the SPRINT object for following analysis
-    sprint <- CreateSPRINTObject(counts=rawcount, location=info[,1:2])
+    sprint <- CreateSPRINTObject(counts=rawcount, location=info[,1:2],
+                                 prectage = 0.1, 
+                                 min_total_counts = 10)
 
     ## total counts for each cell/spot
     sprint@lib_size <- apply(sprint@counts, 2, sum)

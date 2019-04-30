@@ -60,9 +60,17 @@ R CMD INSTALL SPRINT_1.0.0.tar.gz
     sprint <- sprint.test(sprint, check_positive = T, verbose=F)
     
     ## Check pvals 
-    head(sprint@res_mtest)
+    head(sprint@res_mtest[,c("combined_pvalue","adjusted_pvalue")])
 ```
 
+|               | combined_pvalue | adjusted_pvalue |
+| ------------- | ------------- |------------- |
+|GAPDH       |7.477171e-09   | 1.683453e-07 |
+|MAPKAPK2    |1.016078e-01   | 5.952118e-01 |
+|MCL1        |1.149519e-08   | 1.683453e-07 |
+|TMEM109     |4.303998e-01   | 1.000000e+00 |
+|TMEM189     |6.189064e-01   | 1.000000e+00 |
+|ITPK1       |7.213287e-01   | 1.000000e+00 |
 
 
 

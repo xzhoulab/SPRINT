@@ -14,8 +14,7 @@ Installation can then be done via the devtools package:
 library('devtools')
 devtools::install_github('xzhoulab/SPRINT')
 ```
-Alternatively, installation can then be done from a local binary package
-tarball from the shell:
+Alternatively, installation can then be done from a local binary package from the shell:
 ```bash
 R CMD INSTALL SPRINT_1.0.0.tar.gz
 ```
@@ -31,10 +30,13 @@ R CMD INSTALL SPRINT_1.0.0.tar.gz
     rawcount[1:5,1:5]
 ```
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| 17.907x4.967 | 18.965x5.003 | 18.954x5.995 |17.846x5.993 |20.016x6.019|
+| ------------- | ------------- |------------- |------------- |------------- |------------- |
+|GAPDH          |     1         |   7          |  5          |  1      |      2|
+|USP4           |     1         |   0          |  0          |  0      |      0|
+|MAPKAPK2       |     1         |   1          |  0          |  0      |      1|
+|CPEB1          |     0         |   0          |  0          |  0      |      0|
+|LANCL2         |     0         |   0          |  0          |  0      |      0|
 ```R
     ## extract the coordinates from the rawdata
     info <- cbind.data.frame(x=as.numeric(sapply(strsplit(colnames(rawcount),split="x"),"[",1)),

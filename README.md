@@ -1,5 +1,5 @@
 
-##SPRINT
+## SPRINT
 
 **SPRINT** is an efficient method to identify genes with spatial expression pattern. 
 The intended applications are spatially resolved RNA-sequencing from e.g.

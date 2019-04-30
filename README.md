@@ -56,7 +56,7 @@ R CMD INSTALL SPRINT_1.0.0.tar.gz
     sprint@counts   <- sprint@counts[1:10,]
 
     ## Estimating Parameter Under Null
-    sprint <- sprint.vc(sprint,lib_size=sprint@lib_size, num_core=1,verbose=F)
+    sprint <- sprint.vc(sprint,covariates = NULL, lib_size=sprint@lib_size, num_core=1,verbose=F)
 
     ## Calculating pval
     sprint <- sprint.test(sprint, check_positive = T, verbose=F)

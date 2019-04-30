@@ -89,7 +89,7 @@ sprint.vc <- function(object,
 			idx <- match(rownames(model.frame(formula = as.numeric(object@counts[ig,]) ~ 1 + offset(log(lib_size)), na.action = na.omit)),rownames(model.frame(formula = as.numeric(object@counts[ig,]) ~ 1 + offset(log(lib_size)), na.action = na.pass)))
 		}else{
 			model0 <- try(glm(formula = as.numeric(object@counts[ig,]) ~ covariates  + offset(log(lib_size)), family = poisson(link="log")))
-			idx <- match(rownames(model.frame(formula = as.numeric(object@counts[ig,]) ~ covariates + offset(log(lib_size)), na.action = na.omit)),rownames(model.frame(formula = object@counts[ig,]~covariates + offset(log(lib_size)), na.action = na.pass)))
+			idx <- match(rownames(model.frame(formula = object@counts[ig,] ~ covariates + offset(log(lib_size)), na.action = na.omit)),rownames(model.frame(formula = object@counts[ig,]~covariates + offset(log(lib_size)), na.action = na.pass)))
 		}# end fi
 	
 		if(verbose) {cat(paste("NO. Gene = ",ig,"\n"))}
